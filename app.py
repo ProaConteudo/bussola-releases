@@ -9,47 +9,67 @@ def main():
         layout="wide"
     )
     
-    # Estilo personalizado com cores náuticas
+    # Estilo personalizado com cores da Proa Conteúdo
     st.markdown("""
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+    
+    html, body, [class*="css"] {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    
     .main {
-        background-color: #f0f8ff;
+        background-color: #ffffff;
     }
     .stApp {
-        background-image: linear-gradient(to bottom, #f0f8ff, #e6f2ff);
+        background-color: #ffffff;
     }
     h1, h2, h3 {
-        color: #003366;
+        color: #2c2c2c;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+    }
+    p, li, div {
+        color: #2c2c2c;
+        font-family: 'Ubuntu', sans-serif;
     }
     .stTextInput, .stTextArea {
         background-color: #ffffff;
-        border: 1px solid #003366;
+        border: 1px solid #0077b6;
         border-radius: 5px;
+        color: #2c2c2c;
     }
     .stButton>button {
-        background-color: #003366;
-        color: white;
+        background-color: #0077b6;
+        color: #ffffff;
         border-radius: 5px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
     }
     .stButton>button:hover {
-        background-color: #004080;
+        background-color: #023e8a;
+        color: #ffffff;
     }
     .highlight {
         padding: 10px;
         border-radius: 5px;
         margin-bottom: 10px;
+        color: #2c2c2c;
     }
     .good {
         background-color: #e6f7e6;
         border-left: 5px solid #28a745;
+        color: #2c2c2c;
     }
     .medium {
         background-color: #fff3cd;
         border-left: 5px solid #ffc107;
+        color: #2c2c2c;
     }
     .bad {
         background-color: #f8d7da;
         border-left: 5px solid #dc3545;
+        color: #2c2c2c;
     }
     .header-container {
         display: flex;
@@ -63,7 +83,17 @@ def main():
     .nautical-divider {
         text-align: center;
         margin: 20px 0;
-        color: #003366;
+        color: #0077b6;
+    }
+    .stSelectbox label, .stSelectbox div {
+        color: #2c2c2c !important;
+    }
+    .stMarkdown a {
+        color: #0077b6;
+        text-decoration: none;
+    }
+    .stMarkdown a:hover {
+        text-decoration: underline;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -168,9 +198,9 @@ def main():
     
     # Rodapé
     st.markdown("""
-    <div style="text-align: center; margin-top: 50px; color: #003366;">
-        <p>Desenvolvido por <a href="https://proaconteudo.com.br/" target="_blank">Proa Conteúdo</a> | 2025</p>
-        <p style="font-size: 0.8em;">Navegando juntos pelas águas da comunicação</p>
+    <div style="text-align: center; margin-top: 50px; color: #0077b6;">
+        <p>Desenvolvido por <a href="https://proaconteudo.com.br/" target="_blank" style="color: #0077b6;">Proa Conteúdo</a> | 2025</p>
+        <p style="font-size: 0.8em; color: #0077b6;">Navegando juntos pelas águas da comunicação</p>
     </div>
     """, unsafe_allow_html=True)
 
